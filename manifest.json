@@ -1,0 +1,24 @@
+{
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "matches": [
+        "https://chat.openai.com/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "description": "A simple extension which detects query strings in the ChatGPT URL and automatically enters them into the search box",
+  "icons": {
+    "128": "128.png"
+  },
+  "manifest_version": 3,
+  "name": "ChatGPT Query Detector",
+  "permissions": [],
+  "version": "1.2"
+}

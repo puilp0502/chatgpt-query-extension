@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      width: 500px;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>ChatGPT for the Search Bar</h1>
+    <p>Lets you quickly use ChatGPT from the search bar.</p>
+    <ol>
+      <li>Navigate to <code>chrome://settings/searchEngines</code></li>
+      <li>Under "Site search" clidk on "Add"</li>
+      <li>Fill in the following fields:
+        <ul>
+          <li>Search engine: <code>ChatGPT</code></li>
+          <li>Keyword: <code>c</code> (or your preferred hotkey)</li>
+          <li>URL with %s in place of query: <code>https://chat.openai.com/chat?q=%s</code></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</body>
+
+</html>
